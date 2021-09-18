@@ -5,9 +5,15 @@ cmake_minimum_required(VERSION 3.21.2)
 set(This ExampleTests)
 
 set(Sources 
-ExampleTests.cpp)
+ExampleTests.cpp
+ClassTest.cpp
+)
 
-add_executable(${This} ${Sources})
+set(Headers 
+ClassTest.h
+)
+
+add_executable(${This} ${Sources} ${Headers})
 target_link_libraries(${This} PUBLIC 
 gtest_main
 Test_Dev
