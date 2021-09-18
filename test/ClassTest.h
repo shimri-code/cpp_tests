@@ -11,8 +11,8 @@ public:
     Stack<int> stack;
     stackTestFixture();
 
-    void SetUp();
-    void TearDown();
+    virtual void SetUp() override;
+    virtual void TearDown() override;
 };
 
 #endif

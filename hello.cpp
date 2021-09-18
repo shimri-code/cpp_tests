@@ -25,5 +25,8 @@ int main(int argc, char **argv)
     //     std::cout << n << std::endl;
     // }
 
+    int x;
+    std::cin >> x;
+
     return 0;
 }
